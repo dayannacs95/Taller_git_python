@@ -1,0 +1,4 @@
+def invertir_cadena(cadena):
+    return cadena[-1:0]
+x = "hola soy Daya"
+print(invertir_cadena(x))
