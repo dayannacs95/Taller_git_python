@@ -1,4 +1,9 @@
 def invertir_cadena(cadena):
-    return cadena[-1:0]
-x = "hola soy Daya"
-print(invertir_cadena(x))
+    return cadena[::-1]
+
+def contar_vocales(cadena):
+   vocales = 0
+   for letter in cadena:
+      if letter in ['a', 'e', 'i', 'o', 'u']:
+          vocales += 1
+   return vocales
