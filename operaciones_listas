@@ -1,0 +1,18 @@
+## Tarea 2: Operaciones con Listas
+
+def suma_lista(lista):
+    suma = 0
+    for elemento in lista:
+        suma += elemento
+    return suma
+
+def mayor_elemento(lista):
+    mayor = lista[0]
+    for elemento in lista:
+        if elemento > mayor:
+            mayor = elemento
+    return mayor
+
+lista_prueba = [1, 5, 9, 3, 7]
+print("Suma de la lista:", suma_lista(lista_prueba))
+print("Mayor elemento de la lista:", mayor_elemento(lista_prueba))
