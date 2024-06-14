@@ -1,0 +1,16 @@
+import manipulacion_cadenas
+import operaciones_listas
+import diccionarios_archivos
+
+def main():
+cadena = input("Ingrese una cadena de texto: ")
+    print("Cadena invertida:", manipulacion_cadenas.invertir_cadena(cadena))
+    print("Número de vocales:", manipulacion_cadenas.contar_vocales(cadena))
+
+lista_numeros = [int(x) for x in input("Ingrese una lista de números separados por espacios: ").split()]
+    print("Suma de la lista:", operaciones_listas.suma_lista(lista_numeros))
+    print("Mayor elemento de la lista:", operaciones_listas.mayor_elemento(lista_numeros))
+
+nombre_archivo = input("Ingrese el nombre del archivo de texto: ")
+    diccionario_palabras = diccionarios_archivos.leer_archivo(nombre_archivo)
+    diccionarios_archivos.guardar_diccionario(diccionario_palabras, 'frecuencia_palabras.txt')
