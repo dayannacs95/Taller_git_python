@@ -17,7 +17,7 @@ def guardar_diccionario(diccionario, nuevo_archivo):
         archivo2.write(f'{palabra}: {frecuencia}\n')
 
 """"
-diccpalabras=leer_archivo("textogithub.txt")
-print(primera)
-archivotxt=guardar_diccionario(diccpalabras, "diccionario.txt")
+diccpalabras=leer_archivo("texto.txt")
+print(diccpalabras)
+frecuencia_palabras=guardar_diccionario(diccpalabras, "diccionario.txt")
 """
